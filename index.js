@@ -8,29 +8,26 @@ const members = [
     id: 1,
     name: "John Doe",
     email: "john@gmail.com",
-    status: "active"
-
+    status: "active",
   },
+
   {
     id: 2,
-    name: "John Doe",
-    email: "john@gmail.com",
-    status: "active"
-
+    name: "Bob Williams",
+    email: "bob@gmail.com",
+    status: "active",
   },
   {
     id: 3,
-    name: "John Doe",
-    email: "john@gmail.com",
-    status: "active"
-
+    name: "Shannon Jackson",
+    email: "shannon@gmail.com",
+    status: "active",
   },
-]
+];
 
 app.get("/api/members", (req, res) => {
-  
-}
-)
+  res.json(members);
+});
 
 // Set static folder
 app.use(express.static(path.join(__dirname, "public")));
